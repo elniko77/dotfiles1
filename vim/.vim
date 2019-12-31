@@ -1,0 +1,1 @@
+/home/nss/dotfiles/vim

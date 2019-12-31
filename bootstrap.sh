@@ -1,9 +1,11 @@
 #!/bin/bash
 # Create links for dotfiles
 
-ln -s ~/dotfiles/bashrc ~/.bashrc
-ln -s ~/dotfiles/zshrc ~/.zshrc
-ln -s ~/dotfiles/bash_profile ~/.bash_profile
+declare -a ConfigFilesArray=("bashrc" "zshrc"  "vimrc" "vim" )
 
-ln -s ~/dotfiles/vimrc ~/.vimrc
-ln -s ~/dotfiles/vim ~/.vim
+for val in ${ConfigFilesArray[@]}; do
+    if ([ -f ~/.$val ] || [ -d ~/.$val ]); then
+       mv ~/.$val ~/.$val.bak
+    fi
+    ln -s ~/dotfiles/$val ~/.$val
+done
