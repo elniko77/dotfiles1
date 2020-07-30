@@ -1,0 +1,6 @@
+vim/autoload/
+vim/backup/
+vim/pack/
+vim/undo/
+vim/view/
+vim/viminfo

@@ -9,3 +9,9 @@ for val in ${ConfigFilesArray[@]}; do
     fi
     ln -s ~/dotfiles/$val ~/.$val
 done
+
+mkdir -p ~/.vim/autoload ~/.vim/bundle 
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+# Install solarized theme:
+git clone https://github.com/lifepillar/vim-solarized8.git  ~/.vim/pack/themes/opt/solarized8
+
