@@ -14,4 +14,33 @@ En windows:
 En ubuntu:
   sudo apt-get install powerline fonts-powerline
   
-  
+# Configuraciones  
+
+   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+   # change the theme in the .zshrc to powerlevel10k/powerlevel10k 
+
+## Add ZSH Plugins 
+
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+
+## back into the .zshrc make the plugins add with 
+
+nano .zshrc
+
+zsh-autosuggestions zsh-syntax-highlighting
+
+
+## Gnome Extensions 
+
+sudo apt install chrome-gnome-shell
+sudo apt install gnome-tweaks
+
+## Install the following: 
+- CPU Power Manager
+- Dash to Dock 
+- User Themes 
+
+
+
+
